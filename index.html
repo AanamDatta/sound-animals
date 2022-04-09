@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Animal Sound Identification Web App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+     
+    </head>
+    <body>
+        <center>
+  <div id="heading" > 
+ <h2>
+     Sound Controlled Animals
+ </h2>
+ <p>
+     Note: Play different sounds like barking, meowing
+ </p>
+  </div>
+   <br>
+   <br>
+   <br>
+  <div id="main">
+    <button class="btn btn-success" style="font-size: 30px;" onclick="startClassification()">
+      start
+    </button>
+    <span id="span_dog">
+<h4>Detected dog- <label id="amount_dog"></label></h4>
+    </span> 
+    <span id="span_cat">
+        <h4>Detected cat- <label id="amount_cat"></label></h4>
+            </span>
+            <h3>
+                Detected Voice of- <label id="detectedvoice"></label>
+            </h3>
+            <br>
+            <br>
+            <img src="">
+    </div>
+        </center>
+  <script src="main.js"></script>
+    </body>
+  </html>
+</html>
